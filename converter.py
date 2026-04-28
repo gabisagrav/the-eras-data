@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 pasta = "Albuns"
-db_file = "lyrics.db"
+db_file = "AllOfTSLyrics.db"
 
 conn = sqlite3.connect(db_file)
 cur = conn.cursor()
@@ -29,4 +29,4 @@ for arquivo in os.listdir(pasta):
 conn.commit()
 conn.close()
 
-print("Todos os álbuns foram importados para albuns.db")
+print("Ready!")
